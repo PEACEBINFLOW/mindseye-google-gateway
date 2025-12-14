@@ -1,0 +1,14 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: mindseye-google-gateway
+spec:
+  template:
+    spec:
+      containers:
+        - image: gcr.io/YOUR_PROJECT/mindseye-google-gateway:latest
+          env:
+            - name: PORT
+              value: "8080"
+          ports:
+            - containerPort: 8080
