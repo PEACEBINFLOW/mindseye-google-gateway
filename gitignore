@@ -1,0 +1,11 @@
+build/
+dist/
+out/
+cmake-build-*/
+
+.vscode/
+.idea/
+.DS_Store
+
+*.pb.cc
+*.pb.h
